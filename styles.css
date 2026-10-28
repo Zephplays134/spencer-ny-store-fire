@@ -74,6 +74,59 @@ h1 {
   margin-bottom: 24px;
 }
 
+.vote {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #1e222c;
+  border-radius: 10px;
+}
+
+.vote-buttons {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0 10px;
+}
+
+.vote-btn {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid #2a2f3a;
+  background: #171a21;
+  color: var(--text);
+  cursor: pointer;
+  transition: transform 0.1s ease, border-color 0.1s ease;
+}
+
+.vote-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.vote-btn:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.vote-btn.picked {
+  border-color: var(--accent);
+  color: var(--accent);
+  opacity: 1;
+}
+
+.tally {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.vote-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
 .sources {
   display: flex;
   flex-wrap: wrap;
