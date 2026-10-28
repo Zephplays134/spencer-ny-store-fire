@@ -4,10 +4,17 @@ A single-page website that answers one question as straightly as the public reco
 
 The short answer, as of the last update: **undetermined**. No ruling of accident or arson has been released, and the investigation is still open. The page says so plainly instead of guessing.
 
+## Updates
+
+- **Oct 28, 2026** — Added a status update log to the page, with the latest entry highlighted. Verdict still Undetermined.
+- **Oct 28, 2026** — Added this README.
+- **Oct 28, 2026** — Site launched: verdict, facts, timeline, FAQ, visitor vote, and sources.
+
 ## What's on the page
 
 - The verdict banner with the current status and last-checked date
 - Key facts: what burned, when, who responded, and the state of the investigation
+- A status update log tracking the answer to the question over time
 - A timeline from the first smoke spotted at the loading dock through the weeks after
 - Why it matters to the village: the only full-service grocery store, food access since the fire, and how to help
 - A common-questions section
@@ -18,8 +25,8 @@ The short answer, as of the last update: **undetermined**. No ruling of accident
 
 | File | What it does |
 | --- | --- |
-| `index.html` | The whole page: verdict, facts, timeline, FAQ, vote, sources |
-| `styles.css` | Styling |
+| `index.html` | The whole page: verdict, facts, update log, timeline, FAQ, vote, sources |
+| `styles.css` | Styling, including the highlighted latest update |
 | `script.js` | The Yes/No vote logic (saved in the visitor's browser) |
 
 ## Running it
