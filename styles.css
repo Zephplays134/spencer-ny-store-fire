@@ -44,12 +44,18 @@ h1 {
   margin-bottom: 12px;
 }
 
-.sub { margin-bottom: 24px; }
+.sub { margin-bottom: 12px; }
+
+.updated {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
 
 .facts {
   display: grid;
   gap: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .fact {
@@ -66,6 +72,37 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--muted);
+}
+
+.detail { margin-bottom: 28px; }
+
+.detail h2 {
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.detail-text {
+  font-size: 0.95rem;
+}
+
+.timeline {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.timeline li {
+  background: #1e222c;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  border-left: 3px solid #3a4050;
+}
+
+.timeline strong {
+  color: var(--accent);
 }
 
 .note {
@@ -127,6 +164,25 @@ h1 {
   margin-top: 6px;
 }
 
+.resources {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.resources a,
+.sources a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  width: fit-content;
+}
+
+.resources a:hover,
+.sources a:hover { border-bottom-color: var(--accent); }
+
 .sources {
   display: flex;
   flex-wrap: wrap;
@@ -135,14 +191,6 @@ h1 {
 }
 
 .sources .label { display: inline; }
-
-.sources a {
-  color: var(--accent);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-}
-
-.sources a:hover { border-bottom-color: var(--accent); }
 
 footer {
   margin-top: 20px;
