@@ -105,6 +105,10 @@ h1 {
   color: var(--accent);
 }
 
+.updates li:first-child {
+  border-left-color: var(--accent);
+}
+
 .note {
   font-size: 0.9rem;
   color: var(--muted);
